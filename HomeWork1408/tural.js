@@ -1,35 +1,33 @@
-//Task-2
-const myarr = [2, 4, 6, 8, 0];
-const myarr2 = [];
+// Task-2
+const myArr = [2, 4, 6, 8, 0];
 
 
-const myFunction = function (arr, arr2, index) {
+const myFunction = function (arr, index) {
+    const myNewArr = [];
     for (let i = 0; i < arr.length; i++) {
         if (i === index) {
             i++;
         }
-        arr2.push(arr[i]);
+        myNewArr.push(arr[i]);
     }
-    console.log(arr2);
+    console.log(myNewArr);
 }
-
-const result = myFunction(myarr, myarr2, 3);
-
-
-//Task-1
-
-const myarrr = [1, 3, 5, 7, 9];
-const myarrr2 = [];
+const result = myFunction(myArr, 3);
 
 
-const myFunction1 = function (arr, arr2, index, value) {
+// Task-1
+
+const myArr1 = [1, 3, 5, 7, 9];
+
+
+const myFunction1 = function (arr, index, value) {
+    const myNewArr=[];
     for (let i = 0; i < arr.length; i++) {
         if (i === index) {
-            arr2.push(value)
+            myNewArr.push(value)
         }
-        arr2.push(arr[i]);
+        myNewArr.push(arr[i]);
     }
-    console.log(arr2);
+    console.log(myNewArr);
 }
-
-const result1 = myFunction1(myarrr, myarrr2, 2, "SALAM");
+const result1=myFunction1(myArr1,2,`Salam Aleykum Brat`);
