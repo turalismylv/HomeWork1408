@@ -37,7 +37,7 @@ const myFunction1 = function (arr, index, value) {
         myNewArr.push(arr[i]);
     }
     if (index > arr.length-1) {
-
+        myNewArr.length=myNewArr.length+index;
         myNewArr.push(value)
     }
     return myNewArr;
